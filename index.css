@@ -22,7 +22,7 @@ header .container {
   margin: 0 auto;
 }
 
-section .container {
+section .container {  
   padding-bottom: 16px;
 }
 
@@ -37,14 +37,23 @@ section .container {
   margin: 0 0 0 7px;
 }
 
+.icon-wrapper {
+  margin: 10px 0 5px 10px;
+  padding: 0;
+}
+
 .icon-wrapper img {
-  width: 30px;
-  margin: 20px 0 10px 10px;
+  width: 30px;  
+  margin: 0 10px 0 0;
 }
 
 .icon-wrapper img:hover {
   opacity: 0.7;
   cursor: pointer;
+}
+
+.likesAndComments {
+  margin-left: 13px;
 }
 
 /* Typography */

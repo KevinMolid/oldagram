@@ -42,21 +42,23 @@ function renderPosts() {
     
     let entry = `     
       <div class="container">
-      <div class="user-wrapper">
-        <img class="avatar" src=${avatar}>
-        <div class="user-text-wrapper">
-          <p class="bold-text">${name}</p>
-          <p class="small-text">${location}</p>
+        <div class="user-wrapper">
+          <img class="avatar" src=${avatar}>
+          <div class="user-text-wrapper">
+            <p class="bold-text">${name}</p>
+            <p class="small-text">${location}</p>
+          </div>
         </div>
-      </div>
-      <img src=${post}>
-      <div class="icon-wrapper">
-        <img alt="like-button" src="images/icon-heart.png" onclick="increaseLikes(${i})">
-        <img src="images/icon-comment.png">
-        <img src="images/icon-dm.png">
-      </div>
-      <p class="bold-text">${likes} likes</p>
-      <p><span class="name">${username}</span> ${comment}</p>
+        <img class="post-img" src=${post}>
+        <div class="icon-wrapper">
+          <img alt="like-button" src="images/icon-heart.png" onclick="increaseLikes(${i})">
+          <img src="images/icon-comment.png">
+          <img src="images/icon-dm.png">
+        </div>
+        <div class="likesAndComments">
+          <p class="bold-text">${likes} likes</p>
+          <p><span class="name">${username}</span> ${comment}</p>
+        </div>
       </div>
       `
 
