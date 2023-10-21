@@ -49,7 +49,7 @@ function renderPosts() {
             <p class="small-text">${location}</p>
           </div>
         </div>
-        <img class="post-img" src=${post}>
+        <img class="post-img" src=${post} ondblclick="increaseLikes(${i})">
         <div class="icon-wrapper">
           <img alt="like-button" src="images/icon-heart.png" onclick="increaseLikes(${i})">
           <img src="images/icon-comment.png">
